@@ -1,0 +1,6 @@
+{
+  "name": "hi, this is for you",
+  "description": "An interactive digital love letter with scrapbook aesthetics, cute illustrations, password unlock, and heartfelt confession.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

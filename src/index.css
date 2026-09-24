@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-serif-body {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Scrapbook Navy Linen / Ribbed Texture matching references */
+.bg-scrapbook-navy {
+  background-color: #0d1527;
+  background-image: 
+    radial-gradient(ellipse at 50% 40%, #1a2846 0%, #0d1527 75%, #080c16 100%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.018) 0px, rgba(255, 255, 255, 0.018) 1px, transparent 1px, transparent 4px);
+}
+
+/* Scallop stamp edge for scrapbook detail */
+.stamp-edge {
+  background-image: radial-gradient(circle at 0 50%, transparent 6px, #fdfbf7 7px),
+                    radial-gradient(circle at 100% 50%, transparent 6px, #fdfbf7 7px);
+  background-size: 100% 18px;
+}
+
+/* Gentle paper shadow */
+.shadow-scrapbook {
+  box-shadow: 0 14px 35px -6px rgba(4, 9, 20, 0.65), 0 6px 14px -3px rgba(4, 9, 20, 0.45);
+}
+
+.shadow-envelope {
+  box-shadow: 0 16px 40px -8px rgba(3, 7, 18, 0.75), 0 6px 16px -4px rgba(3, 7, 18, 0.5);
+}
+
+/* Custom scrollbar for letter */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.4);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 114, 182, 0.7);
+}
